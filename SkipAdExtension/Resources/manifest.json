@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Skip Ad Safari",
+    "version": "1.0",
+    "description": "Controlla e clicca il pulsante Skip ogni 5 secondi.",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "*://*.youtube.com/*",
+                "*://*.dailymotion.com/*",
+                "*://*.vimeo.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "Auto Skip Ad"
+    },
+    "icons": {
+        "128": "images/icon-128.png"
+    }
+}
