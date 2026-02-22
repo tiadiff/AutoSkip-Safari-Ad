@@ -17,15 +17,22 @@ We believe in a fair and sustainable web. Advertisements are a crucial part of t
 
 ## Installation (for Developers) 💻
 
-1. **Clone the repository**.
-2. **Open the project**: Open `SkipAdApp/Auto Skip Ad Safari/Auto Skip Ad Safari.xcodeproj` in Xcode.
-3. **Sign the App**: In the "Signing & Capabilities" tab, select your Development Team.
-4. **Build & Run**: Press the "Play" button in Xcode.
-5. **Enable in Safari**:
-   - Open Safari.
-   - Go to `Settings` > `Extensions`.
-   - Find **Auto Skip Ad Safari** and enable it.
-   - Grant permission to "Always Allow on Every Website" (or specifically for video platforms).
+Since the extension is not yet published on the Apple App Store, the end user has two options:
+
+### 1. If the user is a "Power User" or Developer (Xcode Method):
+1. Download the code from GitHub (ZIP or git clone).
+2. Open the `.xcodeproj` file with Xcode.
+3. Change the **Team** in the "Signing & Capabilities" settings to your Apple account (free or developer).
+4. Press **Run** (Cmd + R).
+5. Open Safari and enable it in Settings > Extensions.
+
+### 2. If the user just wants to try it (Safari Development Method):
+Safari allows you to load temporary extensions without recompiling.
+
+1. Download the `SkipAdExtension/Resources` folder.
+2. In Safari, go to **Settings > Advanced** and enable "Show web developer features."
+3. In the **Develop** menu (top menu bar), click "Allow unsigned extensions."
+4. Still in the **Develop** menu, select "Show Extension Builder" (or use `xcrun safari-web-extension-converter` to convert the resources folder).
 
 ## Why Safari? 🍎
 
